@@ -16,7 +16,7 @@
     "debug": "debug=1 node src/index.js --silent",
     "build": "npm run build:src && npm run uglify",
     "build:src": "browserify --node --no-bundle-external --standalone ytSearch -t [ babelify --presets [ @babel/preset-env ] ] src/index.js -o dist/yt-search.js 2>&1 | wooster",
-    "uglify": "uglifyjs dist/yt-search.js --compress --mangle --source-map url=dist/yt-search.js.map,includeSources,url=yt-search.min.js.map --output dist/yt-search.min.js dist/yt-search.js",
+    "uglify": "uglifyjs dist/yt-search.js -cmo dist/yt-search.min.js",
     "prepublishOnly": "npm test",
     "test:production": "node test/test.js | faucet",
     "test:util": "node test/test-get-scripts.js",
