@@ -1,5 +1,5 @@
 const _cheerio = require( 'cheerio' )
-const _dasu = require( 'dasu' )
+const _dasu = require( './dasu' )
 const _parallel = require( 'async.parallellimit' )
 
 // auto follow off
