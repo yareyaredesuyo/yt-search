@@ -475,9 +475,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
 var _cheerio = require('cheerio');
 
-var _dasu = require('./dasu');
-
-var _parallel = require('async.parallellimit'); // auto follow off
+var _dasu = require('./dasu'); // const _parallel = require( 'async.parallellimit' )
+// auto follow off
 
 
 _dasu.follow = false;
@@ -1557,7 +1556,7 @@ function test(query) {
   });
 }
 
-},{"./dasu":1,"./util.js":3,"async.parallellimit":undefined,"cheerio":undefined,"fs":undefined,"human-time":undefined,"jsonpath":undefined,"path":undefined,"querystring":undefined,"url":undefined}],3:[function(require,module,exports){
+},{"./dasu":1,"./util.js":3,"cheerio":undefined,"fs":undefined,"human-time":undefined,"jsonpath":undefined,"path":undefined,"querystring":undefined,"url":undefined}],3:[function(require,module,exports){
 "use strict";
 
 var _cheerio = require('cheerio');
