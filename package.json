@@ -2,7 +2,7 @@
   "name": "yt-search",
   "version": "2.5.0",
   "description": "search youtube",
-  "main": "dist/yt-search.min.js",
+  "main": "dist/yt-search.js",
   "bin": {
     "yt-search": "bin/cli.js",
     "yt-search-video": "bin/mpv_video.sh",
